@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #191818;
+    --texto-color: #fff;
+    --inputTarefa: #3c3c3c;
+    --border: #2e2b2b;
+    --fonte: ' Arial, Helvetica, sans-serif';
+     --btnHover: #191817;
+     --bgEdicao: #252323;
+     --fundoModal: #111111;
+}
+
+body{
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 1, 0.363)100%), url(img/pexels-photo-7256738.jpeg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    color: var(--texto-color);
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;;
+    
+}
+
+.container{
+    width: calc(90vw,800px);
+   
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   
+}
+
+header{
+    padding: .8rem;
+}
+
+#inputTarefa{
+    background: var(--inputTarefa) ;
+    color: var(--texto-color);
+    width: 75vw;
+    max-width: 400px;
+    display: flex;
+   margin-left: 5px;
+    padding: .6rem;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid var(--border);
+    
+}
+
+
+
+.topo{
+    display: flex;
+}
+
+
+#btnAdcionarTarefa{
+    padding: .6rem;
+    border-radius: 12px;
+    outline: none;
+    background: var(--inputTarefa);
+    color: var(--texto-color);
+    border: 1px solid var(--border);
+    margin-left: 8px;
+}
+#btnAdcionarTarefa:hover{
+    background-color: var(--btnHover);
+    cursor: pointer;
+}
+li{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 370px;
+    
+    padding: .4rem;
+    margin-top: 2px;
+    margin-right: 20px;
+    border-radius: 12px;
+   margin-left: 20px;
+   
+}
+
+   
+li span{
+    width: 50vw;
+    max-width: 270px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+li button{
+    padding: .4rem;
+    margin: 0 .2rem;
+    border-radius: 12px;
+    background: var(--inputTarefa);
+    color: var(--texto-color);
+    outline: none;
+    cursor: pointer;
+    border: var(--border);
+
+}
+
+li button:hover{
+    background: var(--btnHover)
+    
+}
+
+li>input[type='checkbox']:checked+ span{
+    text-decoration: line-through;
+    
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: .6rem;
+   
+}
+
+
